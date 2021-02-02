@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>romanov exam</title>
+</head>
+<body>
+
+        <header id="home" class="container-fluid head mt-3">
+            <div class="row navrow justify-content-between">
+                <div class="head__logo col-sm-2 col-md-2 col-xl-2 d-flex justify-content-center align-items-center">
+                    <i class="hovicon effect sub-a d-flex justify-content-center align-items-center">
+                        <i class="fab fa-empire"></i>
+                    </i>
+                </div>
+                <div class="head__pages d-flex justify-content-center align-items-center col-sm-5 col-md-5 col-xl-5">
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <div class="animate__animated animate__fadeInDown"><a href="#"><i class="fas fa-chevron-double-down"></i> intro</a></div>
+                        <div class="animate__animated animate__fadeInDown"><a href="#charts"><i class="fas fa-chevron-double-down"></i> data charts</a></div>
+                        <div class="animate__animated animate__fadeInDown"><a href="#popular"><i class="fas fa-chevron-double-down"></i> planets</a></div>
+                        <div class="animate__animated animate__fadeInDown"><a href="#footer"><i class="fas fa-chevron-double-down"></i> contact us</a></div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="container search d-flex justify-content-center">
+                <input placeholder="find the planet" id="searchInput" autocomplete="false" type="search" class="col-sm-5 col-md-5 col-xl-5 mr-3">
+                <button id="findBtn" class="mlr-3 btn btn-danger">Find it!</button>
+            </div>
+
+            <div id="mypopup" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <h2 id="header"></h2>
+                        <span class="close"><i class="far fa-times-circle"></i></span>
+                    </div>
+                    <div class="popup-body">
+                        
+                    </div>
+                    <div class="popup-footer">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="head__intro container">
+                <p id="start">4 mongths ago, a dozen of rookies started a front-end course...</p>
+                <h1>STAR WARS<sub>final project</sub></h1>
+                <div id="titles">
+                    <div id="titlecontent">
+        	            <p class="center">HELLO THERE<br>LAST SPURT</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet...</p> 
+                    </div>
+                </div>    
+            </div>
+        </header>
+
+        <div id="charts" class="charts container d-flex justify-content-center align-items-center">
+            <div class="slide text-center"><canvas id="diameter"></canvas></div>
+            <div class="slide text-center"><canvas id="population"></canvas></div>
+            <div class="slide text-center"><canvas id="rotation"></canvas></div>
+        </div>
+
+        <div dir="rtl" id="popular" class="container planets d-flex justify-content-center align-items-center">
+            <!-- тут слайдер -->
+        </div>
+
+        <footer id="footer" class="container-fluid mb-3 d-flex justify-content-center">
+            <div class="col-4">
+                <ul class="mt-3">
+                    <li><a href="#home">intro</a></li>
+                    <li><a href="#charts">data charts</a></li>
+                    <li><a href="#popular">planets</a></li>
+                    <li><a href="#footer">contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <div>
+                    <div>
+                        <a target="_blank" href="https://www.westernunion.ru/ru/ru/send-money-online.html"><button class="btn btn-danger">Donate Senate!</button></a>
+                    </div>
+                    <div class="text-center mt-4 socials">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <form id="form" class="mt-3" method="GET" action="">
+                    <p>
+                        subscribe to Empire!
+                    </p>
+                    <input type="email" required placeholder="Your email">
+                    <input type="button" value="subscribe">
+                </form>
+            </div>
+        </footer>
+    <script src="js/planet-charts.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/planet-slider.js"></script>
+</body>
+</html>
