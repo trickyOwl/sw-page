@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 body {
   font-family: 'Roboto Mono', monospace;
   background-image: url(../img/back.jpg);
@@ -68,7 +69,7 @@ body .head__logo .hovicon.effect:after {
   left: -7px;
   padding: 7px;
   -webkit-box-shadow: 0 0 0 4px #fff;
-          box-shadow: 0 0 0 4px #fff;
+  box-shadow: 0 0 0 4px #fff;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -175,9 +176,11 @@ body .head__intro p#start {
   0% {
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -187,9 +190,11 @@ body .head__intro p#start {
   0% {
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -225,9 +230,11 @@ body .head__intro h1 sub {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(0.1);
     opacity: 0;
@@ -237,15 +244,17 @@ body .head__intro h1 sub {
 @keyframes logo {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    transform: scale(0.1);
     opacity: 0;
   }
 }
@@ -303,6 +312,7 @@ body .head__intro #titlecontent {
   0% {
     top: 100%;
   }
+
   100% {
     top: -170%;
   }
@@ -312,6 +322,7 @@ body .head__intro #titlecontent {
   0% {
     top: 100%;
   }
+
   100% {
     top: -170%;
   }
@@ -363,17 +374,18 @@ body .head .popup-footer {
 }
 
 body .head .popup-content {
+  top: 200px;
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0px;
   width: 50%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-duration: 0.4s;
   -webkit-animation-name: animatetop;
-          animation-name: animatetop;
+  animation-name: animatetop;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -393,8 +405,9 @@ body .head .popup-content .popup-body {
     top: -300px;
     opacity: 0px;
   }
+
   to {
-    top: 0px;
+    top: 200px;
     opacity: 1;
   }
 }
@@ -404,8 +417,9 @@ body .head .popup-content .popup-body {
     top: -300px;
     opacity: 0px;
   }
+
   to {
-    top: 0px;
+    top: 200px;
     opacity: 1;
   }
 }
@@ -732,4 +746,5 @@ body footer #form input[type="button"]:hover {
     background-image: url(img/smallback.jpg);
   }
 }
+
 /*# sourceMappingURL=style.css.map */
