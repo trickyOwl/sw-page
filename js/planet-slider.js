@@ -148,13 +148,11 @@ for(planet of sliderPlanets){
 document.getElementById('popular').innerHTML = str;
 
 
-//модальное окно и его функции
 document.onkeyup = function (e) {
 	e = e || window.event;
 	if (e.keyCode === 13) {
 		open()
 	}
-	// Отменяем действие браузера
 	return false;
 }
 
@@ -162,11 +160,10 @@ let popup = document.getElementById('mypopup');
 let popupToggle = document.getElementById('findBtn')
 let popupClose = document.querySelector('.close');
 let inputData = document.getElementById('searchInput');
-
-
+let subscribe = document.getElementById('subs');
+let emailData = document.getElementById('email');
 
 function renderAnswer(url){
-    debugger
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -178,7 +175,6 @@ function renderAnswer(url){
                 document.querySelector('.popup-body').innerText = "Unfortunately such planet does not exist in Republic database";
                 return;
             }else{
-                //console.log(data.results[0]);
                 popup.style.display = "block";
                 document.querySelector('.popup-header').style.background = "grey";
                 document.querySelector('.popup-footer').style.background = "grey";
@@ -198,7 +194,6 @@ function renderAnswer(url){
 }
 
 function open(){
-    // popup.style.display = "block";
     if(inputData.value.length == 0){
         popup.style.display = "block";
         document.querySelector('#header').innerText = 'Error';
@@ -209,8 +204,7 @@ function open(){
     }else{
         searchUrl += inputData.value;    
     }
-    //searchUrl += inputData.value;
-    
+
     renderAnswer(searchUrl);
     searchUrl = 'https://swapi.dev/api/planets/?search=';
     document.querySelector('#header').innerText = 'Error';
@@ -221,5 +215,34 @@ function close(){
     inputData.value = '';
 }
 
+
+
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+function validateEmail(value) {
+    return EMAIL_REGEXP.test(value);
+  }
+
+
+function subscr(){
+    let resultCheck = validateEmail(emailData.value);
+    if(resultCheck === false){
+        popup.style.display = "block";
+        document.querySelector('#header').innerText = 'Error';
+        document.querySelector('.popup-header').style.background = "red";
+        document.querySelector('.popup-footer').style.background = "red";
+        document.querySelector('.popup-body').innerText = "Please check if the input is not empty or you have put a valid email!";
+        emailData.value = '';
+    }else{
+        popup.style.display = "block";
+        document.querySelector('#header').innerText = 'Thank You!';
+        document.querySelector('.popup-header').style.background = "green";
+        document.querySelector('.popup-footer').style.background = "green";
+        document.querySelector('.popup-body').innerText = "Thank you for subscription!";
+        emailData.value = '';
+    }
+}
+
 popupToggle.addEventListener('click', open)
 popupClose.addEventListener('click', close)
+subscribe.addEventListener('click', subscr)
