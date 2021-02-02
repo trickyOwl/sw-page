@@ -184,7 +184,7 @@ function renderAnswer(url){
                 document.querySelector('.popup-footer').style.background = "grey";
                 document.querySelector('#header').innerText = data.results[0].name;
                 document.querySelector('.popup-body').innerHTML = `
-                    <p><span><u>Platen climate</u></span>: ${data.results[0].climate};</p>
+                    <p><span><u>Planet climate</u></span>: ${data.results[0].climate};</p>
                     <p><span><u>Diameter</u></span>: ${data.results[0].diameter} km;</p>
                     <p><span><u>Gravity</u></span> <i title="A number denoting the gravity of this planet, where '1' is normal or 1 standard G. '2' is twice or 2 standard Gs. '0.5' is half or 0.5 standard Gs." class="text-danger far fa-question-circle"></i>: ${data.results[0].gravity};</p>
                     <p><span><u>Orbital period</u></span> <i title="The number of standard days it takes for this planet to complete a single orbit of its local star." class="text-danger far fa-question-circle"></i>: ${data.results[0].orbital_period};</p>
